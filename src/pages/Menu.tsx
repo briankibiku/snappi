@@ -40,13 +40,13 @@ const menuItems = {
       name: 'Tusker Lager',
       description: 'Kenya\'s favorite premium lager beer.',
       price: 'Ksh 350',
-      image: 'https://images.unsplash.com/photo-1625940629601-8f2570086b06?auto=format&fit=crop&q=80&w=800'
+      image: 'https://images.unsplash.com/photo-1618885472179-5e474019f2a9?auto=format&fit=crop&q=80&w=800'
     },
     {
       name: 'White Cap Lager',
       description: 'Premium quality beer for the discerning palate.',
       price: 'Ksh 380',
-      image: 'https://images.unsplash.com/photo-1584225064785-c62a8b4ca3bf?auto=format&fit=crop&q=80&w=800'
+      image: 'https://images.unsplash.com/photo-1618885472179-5e474019f2a9?auto=format&fit=crop&q=80&w=800'
     }
   ]
 }
