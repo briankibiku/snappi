@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  /* Matches the navbar height (h-20 = 80px = 5rem) */
+}
+
+@theme {
+  --color-snappi-primary: #FF9B6A;
+  --color-snappi-secondary: #FF8A5C;
+  --color-snappi-accent: #FFA67E;
+  --color-snappi-light: #FFE5D9;
+  --color-snappi-dark: #E67E50;
+
+  --background-image-gradient-snappi: linear-gradient(135deg, #FF9B6A 0%, #FF8A5C 100%);
+
+  --radius-lg: 12px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[image:var(--background-image-gradient-snappi)] rounded-[var(--radius-lg)] shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[color:var(--color-snappi-primary)] bg-white border-2 border-[color:var(--color-snappi-primary)] rounded-[var(--radius-lg)] hover:bg-[color:var(--color-snappi-primary)] hover:text-white transition-all duration-300;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+
+  .section-title {
+    @apply text-4xl lg:text-5xl font-bold text-center mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg lg:text-xl text-center text-gray-600 max-w-3xl mx-auto mb-12;
+  }
+}
