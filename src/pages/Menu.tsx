@@ -96,7 +96,12 @@ export default function Menu() {
                   <div className="p-8">
                     <h3 className="text-2xl font-bold mb-3">{item.name}</h3>
                     <p className="text-gray-600 leading-relaxed mb-6">{item.description}</p>
-                    <button className="btn-primary w-full !py-3">Add to Order</button>
+                    <a 
+                      href="https://manhattan-snapi.web.app/order?qr=QR-001"
+                      className="btn-primary w-full !py-3 block text-center"
+                    >
+                      Add to Order
+                    </a>
                   </div>
                 </motion.div>
               ))}
