@@ -54,19 +54,35 @@ const menuItems = {
 export default function Menu() {
   return (
     <div className="pt-24 min-h-screen bg-white">
+      {/* Menu Hero Section */}
+      <div className="relative h-[40vh] mb-16 overflow-hidden">
+        <img 
+          src="/images/posters/service-efficiency.jpg" 
+          alt="Menu Hero" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+          <div className="section-container text-center text-white">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-5xl lg:text-7xl font-black mb-6"
+            >
+              Our <span className="text-white">Digital Menu</span>
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-xl text-gray-200 max-w-2xl mx-auto"
+            >
+              Experience the best of Kenyan hospitality with our curated selection of local delicacies and drinks.
+            </motion.p>
+          </div>
+        </div>
+      </div>
+
       <div className="section-container">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-5xl lg:text-6xl font-black mb-6">
-            Our <span className="bg-[image:var(--background-image-gradient-snappi)] bg-clip-text text-transparent">Digital Menu</span>
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Experience the best of Kenyan hospitality with our curated selection of local delicacies and drinks.
-          </p>
-        </motion.div>
 
         {Object.entries(menuItems).map(([category, items]) => (
           <div key={category} className="mb-24">

@@ -10,11 +10,13 @@ import Testimonials from '../components/Testimonials'
 import FAQ from '../components/FAQ'
 import Contact from '../components/Contact'
 import CTA from '../components/CTA'
+import Experience from '../components/Experience'
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Experience />
       <Problems />
       <Solutions />
       <HowItWorks />

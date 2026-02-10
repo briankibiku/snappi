@@ -1,4 +1,5 @@
 import { Smartphone, UtensilsCrossed, CreditCard } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const steps = [
   {
@@ -27,7 +28,7 @@ export default function HowItWorks() {
           The easiest way for your customers to order and pay.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-12 relative">
+        <div className="grid md:grid-cols-3 gap-12 relative mb-20">
           {/* Connection Line */}
           <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-white/20 -translate-y-12" />
           
@@ -44,6 +45,20 @@ export default function HowItWorks() {
             </div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="max-w-5xl mx-auto rounded-[2rem] overflow-hidden shadow-2xl border border-white/10"
+        >
+          <img 
+            src="/images/posters/scan-order-pay.jpg" 
+            alt="Scan Order Pay Flow" 
+            className="w-full h-auto"
+          />
+        </motion.div>
       </div>
     </section>
   )

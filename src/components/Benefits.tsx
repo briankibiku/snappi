@@ -9,8 +9,16 @@ const stats = [
 
 export default function Benefits() {
   return (
-    <section className="bg-snappi-primary py-24 text-white">
-      <div className="section-container">
+    <section className="relative py-24 text-white overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/images/posters/data-driven-system.jpg" 
+          alt="Data driven system" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-snappi-primary/90" />
+      </div>
+      <div className="section-container relative z-10">
         <h2 className="section-title text-white">Why Restaurants Choose Snappi</h2>
         <p className="section-subtitle text-white/90">
           Proven results that transform your business from day one.
