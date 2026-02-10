@@ -8,7 +8,7 @@ export default function Navbar() {
   const location = useLocation()
   
   const links = [
-    { name: 'Digital Menu', href: '/menu', isPage: true },
+    { name: 'Menu', href: '/menu', isPage: true },
     { name: 'Solutions', href: '/#solutions' },
     { name: 'How It Works', href: '/#how-it-works' },
     { name: 'Features', href: '/#features' },
